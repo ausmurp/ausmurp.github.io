@@ -24,11 +24,6 @@
   width: 65%;
 }
 
-.landing-nav {
-  position: absolute;
-  float: right;
-}
-
 @media (min-width: 769px) {
   .landing-header {
     display: none;
@@ -50,8 +45,8 @@
     padding: 1.8rem 0;
     width: 90%;
   }
-
-  .landing-nav {
+  
+  .content-header {
     display: none;
   }
 }
