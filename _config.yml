@@ -1,0 +1,16 @@
+title: Austin Murphy
+email: ausmurp@gmail.com
+url:   "http://ausmurp.com"
+description: >
+  Personal portfolio and blog site.
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+
+gems:
+  - jekyll-sitemap

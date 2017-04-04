@@ -1,0 +1,31 @@
+$regular: 400;
+$bold:    700;
+
+// Body Font
+$body-font: $regular 114%/1.5 "myriad-set-pro", sans-serif;
+
+// Header Font
+$header-font: $bold 114%/1.25 "myriad-set-pro", sans-serif;
+
+// Colors
+$background:      #FFF;
+$text-paragraphs: #4D4D4D;
+$text-primary:    #242424;
+$text-secondary:  #777;
+$borders:         #EEE;
+$code-background: #F8F8F8;
+$green-theme:     #32BE80;
+$heart:           #F746B4;
+
+// Medium Screens
+$medium: "(min-width: 34em)";
+
+// Large Screens
+$large: "(min-width: 50em)";
+
+$content-width: 34rem;
+$content-width-wide: 50em;
+
+// Animations
+$duration: .2s;
+$timing: cubic-bezier(.645, .045, .355, 1);
