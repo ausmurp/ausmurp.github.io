@@ -3,12 +3,12 @@ layout:     post-hero
 title:      "Dive into React"
 date:       2015-08-24
 categories: react
-cover:      http://createdwithflair.com/wp-content/uploads/2016/03/react.png
+cover:      reading2.jpg
 permalink:  /blog/dive-into-react
 ---
 React. Is. Amazing.
 
-### What is Vagrant
+
 
 
 ### Getting started
