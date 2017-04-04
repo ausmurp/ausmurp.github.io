@@ -5,6 +5,7 @@ date:       2015-08-24
 categories: react
 cover:      reading2.jpg
 permalink:  /blog/dive-into-react
+published:  false
 ---
 React. Is. Amazing.
 
