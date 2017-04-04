@@ -24,15 +24,9 @@
   width: 65%;
 }
 
-.landing-logo {
-  height: 32px;
+.landing-nav {
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
   float: right;
-
-  #j { fill: $green-theme;  }
-  #v { fill: $text-primary; }
 }
 
 @media (min-width: 769px) {
@@ -57,7 +51,7 @@
     width: 90%;
   }
 
-  .landing-logo {
+  .landing-nav {
     display: none;
   }
 }
