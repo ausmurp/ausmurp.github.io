@@ -2,10 +2,10 @@
 layout:     post-hero
 title:      "Dive into React"
 date:       2015-08-24
-categories: react
+categories: blog
 cover:      reading2.jpg
 permalink:  /blog/dive-into-react
-published:  false
+published:  true
 ---
 React. Is. Amazing.
 
