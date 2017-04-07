@@ -36,18 +36,23 @@ nav {
   display: flex;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-}
-
+  
+  &:first-child .nav__item {
+    padding-left: 0;
+  }
+  
 .nav__item {
   @include transition (color $duration $timing);
   color: $text-secondary;
   padding-left: 1.4rem;
   text-decoration: none;
 
-  &:hover { color: $text-primary; }
-
+  &:hover {
+	color: $text-primary;
+  }
+  
   @media #{$medium} {
-    font-size: .9rem;
+	font-size: .9rem;
   }
 }
 
@@ -64,3 +69,8 @@ nav {
 .nav-text {
   padding-bottom: 0.25rem;
 }
+  
+  
+  
+}
+

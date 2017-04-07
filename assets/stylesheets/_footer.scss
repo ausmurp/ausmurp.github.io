@@ -33,7 +33,28 @@ footer {
 	
 	li {
 	  display: inline;
+	  
+	  
+	  .social-item {
+	    color: $text-secondary;
+		padding-left: 1.4rem;
+		text-decoration: none;
+		
+		&:hover {
+		  color: $text-primary;
+		}
+		
+		@media #{$medium} {
+		  font-size: .9rem;
+		}
+		
+	  }
 	}
+	
+	&:first-child .social-item {
+	  padding-left: 0;
+	}
+	
   }
 
   
