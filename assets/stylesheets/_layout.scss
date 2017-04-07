@@ -18,9 +18,11 @@ html,body {
     @media #{$medium} {
       font-size: 124%;
     }
-}
-
-body {
+	
+	padding: 0;
+    margin:0;
+    height:100%;
+    overflow: hidden;
     background-color: $background;
     color: $text-primary;
 }
