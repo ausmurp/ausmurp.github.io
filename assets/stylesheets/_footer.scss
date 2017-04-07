@@ -16,15 +16,6 @@ footer {
     }
 }
 
-.heart {
-    display: inline-block;
-    fill: $heart;
-    height: 14px;
-    margin: 0 .1rem;
-    visibility: middle;
-    width: 14px;
-}
-
 .social-container {
   text-align: center;
   
@@ -33,7 +24,6 @@ footer {
 	
 	li {
 	  display: inline;
-	  
 	  
 	  .social-item {
 	    color: $text-secondary;
@@ -49,10 +39,11 @@ footer {
 		}
 		
 	  }
-	}
-	
-	&:first-child .social-item {
-	  padding-left: 0;
+	  
+	  &:first-child .social-item {
+		padding-left: 0;
+	  }
+	  
 	}
 	
   }
