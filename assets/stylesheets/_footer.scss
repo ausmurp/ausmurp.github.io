@@ -27,4 +27,14 @@ footer {
 
 .social-container {
   text-align: center;
+  
+  .social-list {
+    @include clean-list;
+	
+	li {
+	  display: inline;
+	}
+  }
+
+  
 }
