@@ -1,13 +1,13 @@
 ---
-layout:     post-hero
-title:      "Dive into React"
-date:       2015-08-24
+layout: post-hero
+title: B2C where are you
+date: 2015-08-24T00:00:00.000Z
 categories: blog
-cover:      reading2.jpg
-permalink:  /blog/dive-into-react
-published:  true
+cover: reading2.jpg
+permalink: /blog/where-are-you-b2c
+published: false
 ---
-React. Is. Amazing.
+
 
 
 
