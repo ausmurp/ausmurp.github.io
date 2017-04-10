@@ -1,11 +1,12 @@
 ---
 layout:    default
-title:     Portfolio
-permalink: /portfolio/
+title:     Projects
+category: projects
+permalink: /projects/
 ---
 
 <ul class="post">
-  {% for post in site.categories.portfolio %}
+  {% for post in site.categories.projects %}
     <li class="post__item">
       <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
         <p class="post__date">{{ post.date | date: "%b %-d, %Y" }}</p>

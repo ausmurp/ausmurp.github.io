@@ -2,9 +2,9 @@
 layout:     post-hero
 title:      "Homeside React accounting portal"
 date:       2014-08-25
-categories: portfolio
+categories: projects
 cover:      reading1.jpg
-permalink:  /portfolio/homeside-react-accounting
-published:  true
+permalink:  /projects/homeside-react-accounting
+published:  false
 ---
 Testing
