@@ -9,13 +9,13 @@ published:  true
 ---
 # 2014 Reading list
 
-[Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](http://shop.oreilly.com/product/9780596518387.do) 
+## [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](http://shop.oreilly.com/product/9780596518387.do) 
 by Dave Hoover [@davehoover](https://twitter.com/davehoover) 
 and Adewale Oshineye [@ade_oshineye](https://twitter.com/ade_oshineye)
 
 This is a good read for anyone who wants to improve professionally. It's a **guide** of patterns and actions that should be like a reference to look back at along our *journey*, some are more difficult than others to forget. Today I'm following one of the given patterns by keeping an open and updated reading list.
 
-[Software Craftsmanship](https://leanpub.com/socra) 
+## [Software Craftsmanship](https://leanpub.com/socra) 
 by Sandro Mancuso [@sandromancuso](https://twitter.com/sandromancuso)
 
 What is Software Craftsmanship? Is it trying to replace Agile? How can I encourage my team to follow eXtreme Programming (XP) and become better professionals? All those questions are answered in the book. The author also talks about finding partnership from the developer' perspective, and recruiting from the company's perspective. It's a great read for developers and managers of companies that want people who really give value.
