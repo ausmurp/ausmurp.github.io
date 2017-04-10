@@ -20,7 +20,9 @@ return kernel;
 ```
 private static void RegisterServices(IKernel kernel)
 {
-    kernel.Bind<ISomeRepository>().To<SomeRepository>();
+    kernel.Bind<ISomeRepository>()
+        .To<SomeRepository>()
+        .WithConstructorArgument("connectionString", ConfigurationManager.AppSettings["DomainDatabase"]);
 }
 ```
 4. Use bindings in controllers
@@ -28,7 +30,7 @@ private static void RegisterServices(IKernel kernel)
 public class SomeController : ApiController
 {
     private readonly ISomeRepository _repo;
-    public ValuesController(ISomeRepository repo)
+    public SomeController(ISomeRepository repo)
     {
         _repo = repo;
     }
@@ -37,7 +39,7 @@ public class SomeController : ApiController
     {
         SomeEntity ent = _repo.GetById(id);
         
-        return ToModel(end);
+        return ToModel(ent);
     }
 }
 ```
