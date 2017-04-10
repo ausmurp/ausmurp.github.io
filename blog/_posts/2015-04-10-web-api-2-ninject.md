@@ -11,17 +11,20 @@ This will pull down the WebActivatorEx package and add a new class called Ninjec
 NinjectWebCommon.cs is missing a key feature if you want to use ninject to construct the controllers, and I presume that is why you are using ninject inside a Web Api project.
 
 In the CreateKernel() method add the code below just before the return statement. Now ninject will be used to resolve controller dependencies.
-
+```
 GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
 return kernel;
+```
 
 3. Add bindings
+```
 private static void RegisterServices(IKernel kernel)
 {
     kernel.Bind<ISomeRepository>().To<SomeRepository>();
 }
-
+```
 4. Use bindings in controllers
+```
 public class SomeController : ApiController
 {
     private readonly ISomeRepository _repo;
@@ -37,3 +40,4 @@ public class SomeController : ApiController
         return ToModel(end);
     }
 }
+```
