@@ -2,8 +2,10 @@
 I’ve been using [Ninject](https://http://www.ninject.org/) for a few years, but every time I use it with Web Api 2 I have to search for the setup instructions. For my future self and your reference, here is how it is done.
 
 1. Get Nuget packages
+```
 Ninject.Web.WebApi
 Ninject.Web.Common.WebHost
+```
 
 This will pull down the WebActivatorEx package and add a new class called NinjectWebCommon to your App_Start directory.
 
