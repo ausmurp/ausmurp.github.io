@@ -1,10 +1,10 @@
 ---
 layout:     post-hero
 title:      "Reading List"
-date:       2017-04-01
+date:       2016-12-10
 categories: blog
 cover:      reading1.jpg
-permalink:  /blog/Reading-list
+permalink:  /blog/reading-list
 published:  true
 ---
 Below is a list of books I have or am planning on reading. As I read them I'll update with posts about the subject matter.
