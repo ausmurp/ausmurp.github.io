@@ -1,4 +1,12 @@
-# Web API 2 with Ninject
+---
+layout: post
+title: Web API 2 with Ninject
+date: 2015-08-24T00:00:00.000Z
+categories: blog
+cover: reading2.jpg
+permalink: /blog/web-api-2-ninject
+published: true
+---
 I’ve been using [Ninject](https://http://www.ninject.org/) for a few years, but every time I use it with Web Api 2 I have to search for the setup instructions. For my future self and your reference, here is how it is done.
 
 ## Get Nuget packages
