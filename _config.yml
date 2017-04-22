@@ -6,6 +6,7 @@ description: >
 
 # Build settings
 markdown: kramdown
+paginate: 20
 
 # Sass settings
 sass:
@@ -13,4 +14,4 @@ sass:
   style: :compressed
 
 gems:
-  - jekyll-sitemap
+  jekyll-sitemap
