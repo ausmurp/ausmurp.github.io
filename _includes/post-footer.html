@@ -1,6 +1,6 @@
 {% if (page.previous) or (page.next) %}
   <ul class="post-footer">
-    {% if (page.previous and page.previous.categories contains page.category) %}
+    {% if (page.previous) %}
       <li class="post-footer__item">
         <a href="{{ page.previous.url }}" class="post-footer__link">
           <p class="post-footer__subtitle">Previous</p>
@@ -9,7 +9,7 @@
       </li>
     {% endif %}
 
-    {% if (page.next and page.next.categories contains page.category) %}
+    {% if (page.next) %}
       <li class="post-footer__item">
         <a href="{{ page.next.url }}" class="post-footer__link">
           <p class="post-footer__subtitle">Next</p>
