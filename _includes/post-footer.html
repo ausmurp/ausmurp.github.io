@@ -1,4 +1,4 @@
-{% if (page.previous and page.previous.categories contains page.category) or (page.next and page.next.categories contains page.category) %}
+{% if (page.previous) or (page.next) %}
   <ul class="post-footer">
     {% if (page.previous and page.previous.categories contains page.category) %}
       <li class="post-footer__item">
