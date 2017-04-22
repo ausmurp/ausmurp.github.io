@@ -1,17 +1,9 @@
-{% for post in site.posts %}
-    {% if post.url == page.url %}
-        {% assign post_index0 = forloop.index0 %}
-        {% assign post_index1 = forloop.index %}
-    {% endif %}
-{% endfor %}
-{% for post in site.posts %}
-    {% if post_index0 == forloop.index %}
-        {% assign next_post = post %}
-    {% endif %}
-    {% if post_index1 == forloop.index0 %}
-        {% assign prev_post = post %}
-    {% endif %}
-{% endfor %}
+{% if page.previous %}
+    {% assign prev_post = page.previous %}
+{% endif %}
+{% if page.next %}
+    {% assign next_post = page.next %}
+{% endif %}
 
 {% if prev_post or next_post %}
   <ul class="post-footer">
