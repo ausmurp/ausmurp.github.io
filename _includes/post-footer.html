@@ -1,5 +1,5 @@
 {% if page.previous and page.previous.category == page.category %}
-      {% assign prevPage = page %}
+      {% assign prevPage = page.previous %}
 {% endif %}
 
 {% if prevPage or page.next %}
