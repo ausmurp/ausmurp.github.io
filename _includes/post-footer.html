@@ -1,23 +1,36 @@
-{% if page.previous and page.previous.category == page.category %}
-      {% assign prevPage = true %}
-{% endif %}
+    {% for post in site.posts %}
+          {% if post.category contains page.category %}
+              {% if post.url == page.url %}
+                  {% assign post_index0 = forloop.index0 %}
+                  {% assign post_index1 = forloop.index %}
+              {% endif %}
+          {% endif %}
+    {% endfor %}
+    {% for post in site.categories %}
+        {% if post_index0 == forloop.index %}
+            {% assign next_post = post %}
+        {% endif %}
+        {% if post_index1 == forloop.index0 %}
+            {% assign prev_post = post %}
+        {% endif %}
+    {% endfor %}
 
-{% if page.previous or page.next %}
+{% if prev_post or next_post %}
   <ul class="post-footer">
-    {% if page.previous %}
+    {% if prev_post %}
       <li class="post-footer__item">
-        <a href="{{ page.previous.url }}" class="post-footer__link">
+        <a href="{{ prev_post.url }}" class="post-footer__link">
           <p class="post-footer__subtitle">Previous</p>
-          <p class="post-footer__title">{{ page.previous.title }}</p>
+          <p class="post-footer__title">{{ prev_post.title }}</p>
         </a>
       </li>
     {% endif %}
 
-    {% if page.next %}
+    {% if next_post %}
       <li class="post-footer__item">
-        <a href="{{ page.next.url }}" class="post-footer__link">
+        <a href="{{ next_post.url }}" class="post-footer__link">
           <p class="post-footer__subtitle">Next</p>
-          <p class="post-footer__title">{{ page.next.title }}</p>
+          <p class="post-footer__title">{{ next_post.title }}</p>
         </a>
       </li>
     {% endif %}
