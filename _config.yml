@@ -6,7 +6,7 @@ description: >
 
 # Build settings
 markdown: kramdown
-paginate: 20
+paginate:1
 
 # Sass settings
 sass:
