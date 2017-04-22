@@ -1,10 +1,14 @@
-{% if page.previous or page.next %}
+{% if page.previous and page.previous.category == page.category %}
+      {% assign prevPage = page %}
+{% endif %}
+
+{% if prevPage or page.next %}
   <ul class="post-footer">
-    {% if page.previous %}
+    {% if prevPage %}
       <li class="post-footer__item">
-        <a href="{{ page.previous.url }}" class="post-footer__link">
+        <a href="{{ prevPage.url }}" class="post-footer__link">
           <p class="post-footer__subtitle">Previous</p>
-          <p class="post-footer__title">{{ page.previous.title }}</p>
+          <p class="post-footer__title">{{ prevPage.title }}</p>
         </a>
       </li>
     {% endif %}
