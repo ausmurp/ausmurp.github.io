@@ -2,20 +2,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ site.title } - { page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="author" href="https://twitter.com/ausmurp" />
   <link rel="publisher" href="https://twitter.com/ausmurp" />
   <link rel="shortcut icon" href="{{site.url}}/assets/images/avatar.png" />
-  <meta property="og:title" content="{% if page.title %}{{ site.title } - { page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="{{site.url}}/assets/images/avatar.png" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ausmurp" />
-  <meta name="twitter:title" content="{% if page.title %}{{ site.title } - { page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:title" content="{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="twitter:image" content="{{site.url}}/assets/images/avatar.png" />
   <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
