@@ -3,7 +3,7 @@ layout:     post-hero
 title:      "Reading List"
 date:       2016-12-10
 categories: blog
-cover:      reading1.jpg
+cover:      books-pixelated.png
 permalink:  /blog/reading-list
 published:  true
 ---
