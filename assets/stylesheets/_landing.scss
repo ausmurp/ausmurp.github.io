@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 769px) {
-  .author img {
+  .author {
     display: none;
   }
 }
@@ -52,15 +52,16 @@
     display: none;
   }
 
+  .content-header {
+	text-align: center;
+  }
+  
   .landing-content {
     margin: 0 auto;
     max-width: 30rem;
-    padding: 0;
+    padding: 4px;
     width: 90%;
 	
-	.content-header {
-	  text-align: center;
-	}
 	h1 {
 	  text-align: center;
 	}
