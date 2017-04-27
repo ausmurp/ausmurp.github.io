@@ -33,7 +33,6 @@
 }
 
 .content-header {
-  text-align: right;
   padding-bottom:1rem;
 }
 
@@ -52,7 +51,7 @@
     display: none;
   }
 
-  .content-header {
+  .content-header .nav {
 	text-align: center;
   }
   
