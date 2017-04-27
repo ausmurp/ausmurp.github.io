@@ -26,12 +26,12 @@ header .container {
 ========================================================================== */
 
 nav {
-  -webkit-flex: 1;
-  flex: 1;
+  width: 100%;
 }
 
 .nav {
   @include clean-list;
+  text-align: right;
   
   li {
     display: inline;
@@ -41,35 +41,35 @@ nav {
     }
   }
 
-  
-.nav__item {
-  @include transition (color $duration $timing);
-  color: $text-secondary;
-  padding-left: 1.4rem;
-  text-decoration: none;
+	  
+	.nav__item {
+	  @include transition (color $duration $timing);
+	  color: $text-secondary;
+	  padding-left: 1.4rem;
+	  text-decoration: none;
 
-  &:hover {
-	color: $text-primary;
-  }
-  
-  @media #{$medium} {
-	font-size: .9rem;
-  }
-}
+	  &:hover {
+		color: $text-primary;
+	  }
+	  
+	  @media #{$medium} {
+		font-size: .9rem;
+	  }
+	}
 
-.nav__item--current {
-  color: $text-primary;
+	.nav__item--current {
+	  color: $text-primary;
 
-  &:hover { color: inherit; }
-}
+	  &:hover { color: inherit; }
+	}
 
-.nav-icon {
-  
-}
+	.nav-icon {
+	  
+	}
 
-.nav-text {
-  padding-bottom: 0.25rem;
-}
+	.nav-text {
+	  padding-bottom: 0.25rem;
+	}
   
   
   
