@@ -21,15 +21,25 @@
   justify-content: center;
   padding: 4rem 4rem 1rem 4rem;
   width: 65%;
+  
+  .author img {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }
 
 .content-header {
-  text-align: right;
   padding-bottom:1rem;
 }
 
 @media (min-width: 769px) {
-
+  .author {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -41,11 +51,19 @@
     display: none;
   }
 
+  .content-header .nav {
+	text-align: center;
+  }
+  
   .landing-content {
     margin: 0 auto;
     max-width: 30rem;
-    padding: 1.8rem 0;
+    padding: 4px;
     width: 90%;
+	
+	h1 {
+	  text-align: center;
+	}
   }
 
 }
