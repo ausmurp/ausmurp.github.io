@@ -1,14 +1,13 @@
 ul.social-share-list {
-  display: block;
-  text-align: center;
-  list-style: none;
-  margin: 0 auto;
+  @include clean-list;
+	
   a {
     text-decoration: none;
   }
   li {
-    display: inline-block;
+    display: inline;
     margin: 0 1rem;
+		
     svg {
       width: 2.8rem;
       height: 2.8rem;
