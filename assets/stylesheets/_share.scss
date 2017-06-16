@@ -1,29 +1,34 @@
-ul.social-share-list {
+ul.share {
   @include clean-list;
-	
-  a {
-    text-decoration: none;
-  }
+
   li {
     display: inline;
-    margin: 0 1rem;
+    
+		.share-item {
+	    color: $text-secondary;
+			padding-left: 1.4rem;
+			text-decoration: none;
+			
+			&:hover {
+				color: $text-primary;
+			}
+			
+			@media #{$medium} {
+				font-size: .8rem;
+			}
+		}
 		
-    svg {
-      width: 2.8rem;
-      height: 2.8rem;
-      margin: 0;
-      path {
-        fill: $dark-grey;
-      }
-    }
+		&:first-child .share-item {
+			padding-left: 0;
+	  }
   }
-  li.share-facebook:hover svg {
+  li.share-facebook:hover {
     path { fill: $facebook-blue; }
   }
-  li.share-twitter:hover svg {
+  li.share-twitter:hover {
     path { fill: $twitter-blue; }
   }
-  li.share-linkedin:hover svg {
+  li.share-linkedin:hover {
     path { fill: $linkedin-blue; }
   }
 }

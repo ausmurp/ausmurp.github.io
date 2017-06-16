@@ -1,4 +1,4 @@
-ul.social-list {
+ul.social {
 	@include clean-list;
 
 	li {
@@ -14,15 +14,13 @@ ul.social-list {
 			}
 			
 			@media #{$medium} {
-				font-size: .9rem;
+				font-size: .8rem;
 			}
-		
 	  }
 	  
 	  &:first-child .social-item {
 			padding-left: 0;
 	  }
-	  
 	}
  
 }
