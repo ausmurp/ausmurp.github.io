@@ -19,7 +19,7 @@ gems:
   - jekyll-mentions
 
 # Pagination
-paginate: 10
+paginate: 2
 paginate_path: "/blog/page:num/"
 
 # Blog url

@@ -5,7 +5,7 @@ date: 2015-08-24T00:00:00.000Z
 categories: blog
 cover: reading2.jpg
 permalink: /blog/where-are-you-b2c
-published: false
+published: true
 ---
 
 
