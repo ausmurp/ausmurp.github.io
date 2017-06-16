@@ -8,24 +8,23 @@ ul.social-share-list {
   }
   li {
     display: inline-block;
-    margin: 0 $spacing-unit/2;
+    margin: 0 1rem;
     svg {
-      @extend %ease-in;
       width: 2.8rem;
       height: 2.8rem;
       margin: 0;
       path {
-        fill: $grey-color-dark;
+        fill: $dark-grey;
       }
     }
   }
   li.share-facebook:hover svg {
-    path { fill: #3b5998; }
+    path { fill: $facebook-blue; }
   }
   li.share-twitter:hover svg {
-    path { fill: #4099ff; }
+    path { fill: $twitter-blue; }
   }
   li.share-linkedin:hover svg {
-    path { fill: #4875b4; }
+    path { fill: $linkedin-blue; }
   }
 }
