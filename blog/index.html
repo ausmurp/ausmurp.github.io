@@ -1,18 +1,31 @@
 ---
 layout:    default
 title:     Blog
-category: blog
-permalink: /blog/
 ---
-
-<ul class="post">
-  {% for post in site.categories.blog %}
-    <li class="post__item">
-      <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
-        <p class="post__date">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <h3 class="post__title">{{ post.title }}</h3>
-        <p class="post__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 48 }}</p>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<section>
+  <h1 class="page-heading">{{ page.title }}</h1>
+  <ul class="post">
+    {% for post in paginator.posts %}
+      <li class="post__item">
+        <a class="post__link" href="{{ post.url | prepend: site.baseurl }}">
+          <p class="post__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <h3 class="post__title">{{ post.title }}</h3>
+          <p class="post__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 48 }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-link active previous" title="Previous Page">PREV</a>
+  {% else %}
+    <span class="paginate-link previous">PREV</span>
+  {% endif %}
+  <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="paginate-link active next" title="Next Page">NEXT</a>
+  {% else %}
+    <span class="paginate-link next">NEXT</span>
+  {% endif %}
+</div>

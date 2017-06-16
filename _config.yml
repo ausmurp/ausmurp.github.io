@@ -2,7 +2,7 @@ title: Austin Murphy
 email: ausmurp@gmail.com
 url:   "http://ausmurp.com"
 description: >
-  Personal portfolio and blog site about all things software and game development.
+  Personal portfolio and blog site about all things Web, App and Game Development.
 
 # Build settings
 markdown: kramdown
@@ -12,5 +12,69 @@ sass:
   sass_dir: assets/stylesheets
   style: :compressed
 
+# Gems
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-mentions
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Blog url
+permalink: /blog/:title/
+
+# Mentions
+jekyll-mentions: https://twitter.com
+
+# Collections
+collections:
+  projects:
+    title: Projects
+    featured-image:
+    permalink: /projects/:path
+    output: true
+
+# Prose
+prose:
+  siteurl: 'http://ausmurp.com'
+  media: 'images'
+  ignore:
+    - /_layouts
+    - /_includes
+    - /_sass
+    - /css
+    - /_site
+    - Gemfile
+    - Gemfile.lock
+    - feed.xml
+    - /.sass-cache
+    - README.md
+  metadata:
+    /_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "textarea"
+          placeholder: "Add your post title here"
+    /_projects:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "project"
+      - name: "title"
+        field:
+          element: "textarea"
+          placeholder: "Add a title for the project here"
+      - name: "description"
+        field:
+          element: "textarea"
+          placeholder: "Add a short description of the project"
+      - name: "related"
+        field:
+          element: "textarea"
+          placeholder: "Add the titles of related projects here"

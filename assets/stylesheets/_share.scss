@@ -1,0 +1,31 @@
+ul.social-share-list {
+  display: block;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
+  li {
+    display: inline-block;
+    margin: 0 $spacing-unit/2;
+    svg {
+      @extend %ease-in;
+      width: 2.8rem;
+      height: 2.8rem;
+      margin: 0;
+      path {
+        fill: $grey-color-dark;
+      }
+    }
+  }
+  li.share-facebook:hover svg {
+    path { fill: #3b5998; }
+  }
+  li.share-twitter:hover svg {
+    path { fill: #4099ff; }
+  }
+  li.share-linkedin:hover svg {
+    path { fill: #4875b4; }
+  }
+}
