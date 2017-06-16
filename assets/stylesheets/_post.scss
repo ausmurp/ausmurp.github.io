@@ -64,11 +64,9 @@ article li {
 
 .post-footer {
   @extend %clearfix;
+  @include clean-list;
   border-top: 1px solid $borders;
   border-bottom: 1px solid $borders;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 
   .post-footer__item {
     float: left;
@@ -89,7 +87,6 @@ article li {
   .post-footer__link {
     @include ellipsis;
     @include transition (background $duration $timing);
-    
     color: $text-secondary;
     display: block;
     padding: 1.5rem;

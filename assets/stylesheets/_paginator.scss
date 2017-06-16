@@ -1,26 +1,19 @@
-ul.paginator {
+.paginator {
+  @extend %clearfix;
   @include clean-list;
   border-top: 1px solid $borders;
   border-bottom: 1px solid $borders;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 	
-	li {
-    display: inline-block;
-    
-    .paginator-item {
-      float: left;
-      margin: 0;
-      border-left: 1px solid $borders;
-      text-align: center;
-      width: 33.33%;
+  .paginator-item {
+    float: left;
+    margin: 0;
+    width: 33.33%;
+    border-left: 1px solid $borders;
+
+    &:first-of-type {
+      border-left: none;
     }
-    
-		&:first-child .paginator-item {
-			border-left: 0;
-	  }
-	}
+  }
 
   .paginator-item__link {
     @include ellipsis;
