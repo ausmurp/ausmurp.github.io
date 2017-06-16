@@ -7,10 +7,12 @@ ul.paginator {
   padding: 0;
 	
 	li {
-		display: inline-block;
-		
     .paginator-item {
+      float: left;
+      margin: 0;
       border-left: 1px solid $borders;
+      text-align: center;
+      width: 33.333337%;
     }
     
 		&:first-child .paginator-item {
@@ -21,7 +23,6 @@ ul.paginator {
   .paginator-item__link {
     @include ellipsis;
     @include transition (background $duration $timing);
-    
     color: $text-secondary;
     display: block;
     padding: 1.5rem;
