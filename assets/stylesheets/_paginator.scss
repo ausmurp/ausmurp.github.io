@@ -27,9 +27,11 @@
     @media #{$medium} {
       padding: 2rem 4rem;
     }
-
-    &:hover { background: $code-background; }
     
+    .with-hover {
+      &:hover { background: $code-background; }
+    }
+
     .disabled {
       pointer-events: none;
       cursor: not-allowed;
