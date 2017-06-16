@@ -94,17 +94,17 @@ article li {
 
     &:hover { background: $code-background; }
   }
-}
+  
+  .post-footer__title {
+    @include ellipsis;
+    color: $text-primary;
+    font-weight: $bold;
+    margin: 0;
+  }
 
-.post-footer__title {
-  @include ellipsis;
-  color: $text-primary;
-  font-weight: $bold;
-  margin: 0;
-}
-
-.post-footer__subtitle {
-  color: $text-secondary;
-  font-size: .9rem;
-  margin: 0;
+  .post-footer__subtitle {
+    color: $text-secondary;
+    font-size: .9rem;
+    margin: 0;
+  }
 }
