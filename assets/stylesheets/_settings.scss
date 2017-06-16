@@ -7,19 +7,29 @@ $body-font: $regular 114%/1.5 "myriad-set-pro", sans-serif;
 // Header Font
 $header-font: $bold 114%/1.25 "myriad-set-pro", sans-serif;
 
-// Colors
-$background:      #FFF;
-$text-paragraphs: #4D4D4D;
-$text-primary:    #242424;
-$text-secondary:  #777;
-$borders:         #EEE;
-$code-background: #F8F8F8;
-$green-theme:     #32BE80;
-$pink:           #F746B4;
+// Palette
+$green:           #32BE80;
+$pink:            #F746B4;
+$black-grey:			#242424;
+$dark-grey:       #4D4D4D;
+$grey:            #777;
+$light-grey				#EEE;
+$white-grey				#F8F8F8;
+
 // Social media colors
+$facebook-blue:        #3b5998;
 $linkedin-blue:        #007bb6;
 $twitter-blue:         #00aced;
 $github-gray:          #000000;
+
+// Item colors
+$background:      white;
+$text-paragraphs: $dark-grey;
+$text-primary:    $black-grey;
+$text-secondary:  $grey;
+$borders:         $light-grey;
+$code-background: $white-grey;
+$link-color:     $green;
 
 // Medium Screens
 $medium: "(min-width: 34em)";
