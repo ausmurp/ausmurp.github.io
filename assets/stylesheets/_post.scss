@@ -62,7 +62,7 @@ article li {
 /* Post Footer
 ========================================================================== */
 
-.post-footer {
+ul.post-footer {
   @extend %clearfix;
   border-top: 1px solid $borders;
   border-bottom: 1px solid $borders;
@@ -70,12 +70,19 @@ article li {
   margin: 0;
   padding: 0;
 
-  .post-footer__item {
-    float: left;
-    margin: 0;
-    width: 50%;
-
-    &:only-of-type { width: 100%; }
+  li {
+    
+    .post-footer__item {
+      float: left;
+      margin: 0;
+      width: 50%;
+      border-left: 1px solid $borders;
+      &:only-of-type { width: 100%; }
+    }
+    
+		&:first-child .post-footer__item  {
+			border-left: 0;
+	  }
   }
 
   .post-footer__link {
