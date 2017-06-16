@@ -18,17 +18,22 @@ title:     Blog
 </section>
 
 <ul class="post-footer">
-    <li class="post-footer__item">
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Previous Page" class="post-footer__link{% if paginator.previous_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
-        <p class="post-footer__title">Previous</p>
-      </a>
-    </li>
   <li class="post-footer__item">
-    <p class="post-footer__title">{{ paginator.page }} / {{ paginator.total_pages }}</p>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Previous Page" class="post-footer__link{% if paginator.previous_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
+      <p class="post-footer__subtitle">Prev</p>
+      <p class="post-footer__title">{{ paginator.previous_page }}</p>
+    </a>
   </li>
-    <li class="post-footer__item">
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page" class="post-footer__link">
-        <p class="post-footer__title">Next</p>
-      </a>
-    </li>
+  <li class="post-footer__item">
+    <a href="" title="Current Page" class="post-footer__link disabled">
+      <p class="post-footer__subtitle">Page</p>
+      <p class="post-footer__title">{{ paginator.page }}</p>
+    </a>
+  </li>
+  <li class="post-footer__item">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page" class="post-footer__link{% if paginator.next_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
+      <p class="post-footer__subtitle">Page</p>
+      <p class="post-footer__title">{{ paginator.next_page }}</p>
+    </a>
+  </li>
 </ul>
