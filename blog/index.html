@@ -16,6 +16,29 @@ title:     Blog
     {% endfor %}
   </ul>
 </section>
+
+{% if paginator.previous_page or if paginator.next_page %}
+  <ul class="post-footer">
+    {% if paginator.previous_page %}
+      <li class="post-footer__item">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Previous Page" class="post-footer__link">
+          <p class="post-footer__subtitle">Previous</p>
+        </a>
+      </li>
+    {% endif %}
+    <li class="post-footer__item">
+      <span class="post-footer__subtitle">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    </li>
+    {% if paginator.next_page %}
+      <li class="post-footer__item">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page" class="post-footer__link">
+          <p class="post-footer__subtitle">Next</p>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
+
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="paginate-link active previous" title="Previous Page">PREV</a>
