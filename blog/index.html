@@ -25,10 +25,10 @@ title:     Blog
     </a>
   </li>
   <li class="paginator-item">
-    <i title="Current Page" class="paginator-item__link">
+    <div title="Current Page" class="paginator-item__link">
       <p class="paginator-item__subtitle">Page</p>
       <p class="paginator-item__title">{{ paginator.page }}</p>
-    </i>
+    </div>
   </li>
   <li class="paginator-item">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page" class="paginator-item__link{% if paginator.next_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
