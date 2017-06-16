@@ -19,18 +19,17 @@ title:     Blog
 
 <ul class="paginator">
   <li class="paginator-item">
-    <a href="" title="Previous Page" class="paginator-item__link">
+    <a href="{% if paginator.previous_page %}{{ paginator.previous_page_path | prepend: site.baseurl }}{% else %}{{ '' }}{% endif %}" title="Previous Page" class="paginator-item__link{% if paginator.previous_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
       <span class="paginator-item__subtitle">Prev</span>
     </a>
   </li>
   <li class="paginator-item">
     <div title="Current Page" class="paginator-item__link">
-      <span class="paginator-item__subtitle">Page</span>
-      <p class="paginator-item__title">{{ paginator.page }} of {{ paginator.total_pages }}</p>
+      <span class="paginator-item__subtitle">{{ paginator.page }} of {{ paginator.total_pages }}</span>
     </div>
   </li>
   <li class="paginator-item">
-    <a href="" title="Next Page" class="paginator-item__link">
+    <a href="{% if paginator.next_page %}{{ paginator.next_page_path | prepend: site.baseurl }}{% else %}{{ '' }}{% endif %}" title="Next Page" class="paginator-item__link{% if paginator.next_page %}{{ '' }}{% else %}{{ ' disabled' }}{% endif %}">
       <span class="paginator-item__subtitle">Next</span>
     </a>
   </li>
