@@ -1,9 +1,8 @@
 ---
-layout:     post-hero
+layout:     post
 title:      "Dude where's your car?"
 date:       2016-11-05
 categories: projects
-cover:      react.png
 permalink:  /projects/dude-wheres-your-car
 published:  true
 ---
