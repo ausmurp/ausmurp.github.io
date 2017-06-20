@@ -7,7 +7,7 @@ permalink:  /projects/dude-wheres-your-car
 published:  true
 ---
 ## The Tech
-This project was a single page app in .Net Core MVC, Angular 2, Google Maps front end and API backend, using AWS SNS (Simple Notification Service) for text messaging between the service technician and the customer.
+This project was a single page app in Angular 2 and Google Maps front end, and .Net Core Web API back end using AWS SNS (Simple Notification Service) for text messaging between the service technician and the customer. This web app was hosted on AWS EC2.
 
 ## The Problem
 The technician has arrived at the location of the vehicle to perform service, which was collected prior to this scope. They notice it is a giant parking lot and does not have enough information to find the vehicle quickly. So they press a button in the existing technician mobile app to send a text message to the customer asking them to narrow the location and description a bit. The message is generated from within the app so the tech does not specify the message.
