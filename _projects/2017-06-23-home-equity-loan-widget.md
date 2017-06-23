@@ -18,4 +18,4 @@ To show potential customers how much they can get from a home equity line of cre
 ### Mobile view
 ![Image](/assets/images/posts/home-equity-loan-widget-2.png)
 
-https://codepen.io/ausmurp/pen/YQwPWx
+<https://codepen.io/ausmurp/pen/YQwPWx>

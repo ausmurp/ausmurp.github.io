@@ -32,4 +32,4 @@ Display results
 
 ![Image](/assets/images/posts/store-locator-4.png)
 
-https://www.safelite.com/store-locator
+<https://www.safelite.com/store-locator>
