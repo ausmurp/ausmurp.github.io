@@ -12,7 +12,24 @@ This project is a collection of pages inside of the safelite.com website used to
 ## The Goal
 To show potential customers where the physical stores are located.
 
+### Desktop view
+
+Search by address
+
 ![Image](/assets/images/posts/store-locator-1.png)
+
+Display results
+
 ![Image](/assets/images/posts/store-locator-2.png)
+
+### Mobile view
+
+Search by address
+
+![Image](/assets/images/posts/store-locator-3.png)
+
+Display results
+
+![Image](/assets/images/posts/store-locator-4.png)
 
 https://www.safelite.com/store-locator
