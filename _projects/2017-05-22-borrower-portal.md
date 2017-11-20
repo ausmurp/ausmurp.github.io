@@ -12,10 +12,4 @@ This project is a single page app written in VueJS, Knockout, SASS/CSS3, HTML5 f
 ## The Goal
 To show borrowers (customers) the life cycle of the loan process, with e-signing and document uploading.
 
-### Desktop view
-![Image](/assets/images/posts/borrower-portal-1.png)
-
-### Mobile view
-![Image](/assets/images/posts/borrower-portal-1.png)
-
 <https://my.gohomeside.com>
