@@ -13,4 +13,3 @@ This project was a single page app in React with React Boilerplate (Redux, Sagas
 To apply for a mortgage loan you were required to fill out piles of paperwork, or if you did this online it was a long process of several forms and terrible user experiences. This reduces all of that into a collection of the least possible amount of data to pull credit and apply for a mortgage loan.
 
 <https://personalapply.com/my-apply>
-<https://my.gohomeside.com>
