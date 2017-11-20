@@ -4,7 +4,7 @@ title:      "Borrower portal"
 date:       2017-05-22
 categories: projects
 permalink:  /projects/borrower-portal
-published:  false
+published:  true
 ---
 ## The Tech
 This project is a single page app written in VueJS, Knockout, SASS/CSS3, HTML5 front end, .NET MVC, Entity Framework backend.
