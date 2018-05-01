@@ -6,4 +6,4 @@ published: true
 
 # Hi, I’m Austin.
 
-I’m a software developer/engineer living in Columbus, Ohio, USA. Currently, I work as a full stack front end developer building awesome user experiences. I also own [Thumbyte](http://www.thumbyte.com), where make indie games for mobile, and install smart home solutions locally!
+I’m a software developer/engineer living in Columbus, Ohio, USA. Currently, I work as a full stack front end developer building awesome user experiences. I also own [Thumbyte](http://www.thumbyte.com), where I make indie games and apps.
